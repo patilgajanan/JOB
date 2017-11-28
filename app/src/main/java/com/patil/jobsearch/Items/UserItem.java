@@ -13,12 +13,12 @@ package com.patil.jobsearch.Items;
  */
 
 public class UserItem {
-    private String id, img, name, email, mobile, password,roll;
+    private String id, img, name, email, mobile, password, roll,device_token, query;
 
     public UserItem() {
     }
 
-    public UserItem(String id, String img, String name, String email, String mobile, String password, String roll) {
+    public UserItem(String id, String img, String name, String email, String mobile, String password, String roll, String device_token, String query) {
         this.id = id;
         this.img = img;
         this.name = name;
@@ -26,6 +26,8 @@ public class UserItem {
         this.mobile = mobile;
         this.password = password;
         this.roll = roll;
+        this.device_token = device_token;
+        this.query = query;
     }
 
     public String getId() {
@@ -82,5 +84,21 @@ public class UserItem {
 
     public void setRoll(String roll) {
         this.roll = roll;
+    }
+
+    public String getDevice_token() {
+        return device_token;
+    }
+
+    public void setDevice_token(String device_token) {
+        this.device_token = device_token;
+    }
+
+    public String getQuery() {
+        return query;
+    }
+
+    public void setQuery(String query) {
+        this.query = query;
     }
 }

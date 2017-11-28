@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_nav_header"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <com.patil.jobsearch.Class.CircleImageView
+            android:id="@+id/circleImageView_header_drawer"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/person" />
+
+        <TextView
+            android:id="@+id/tv_roll_header_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:paddingLeft="16dp"
+            android:text="ROLL"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_name_header_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android Studio"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/tv_email_header_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="android.studio@android.com" />
+
+</LinearLayout>
